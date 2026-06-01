@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
  *  BUTTON_DELAY_MS    -> Tempo até o botão aparecer (180000ms = 3min)
  * ========================================================= */
 const YOUTUBE_VIDEO_URL = 'https://www.youtube.com/embed/cM4sMqtc1iU'
-const CTA_BUTTON_URL = '#' // TODO: substituir pelo link do WhatsApp/contato
+const CTA_BUTTON_URL = 'https://wa.me/5543991894477?text=Oi%2C%20quero%20uma%20opera%C3%A7%C3%A3o%20escal%C3%A1vel'
 const BUTTON_DELAY_MS = 180000 // 3 minutos
 
 export default function App() {
@@ -44,6 +44,8 @@ export default function App() {
         {showButton && (
           <a
             href={CTA_BUTTON_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto text-center bg-[#00C853] hover:bg-[#00b34a] text-white font-bold uppercase text-lg rounded-full px-10 py-4 transition-colors duration-200"
           >
             Falar com a APEX
